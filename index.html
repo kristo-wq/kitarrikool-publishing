@@ -14,6 +14,7 @@
     h1, h2, h3, .serif { font-family: 'Lora', serif; }
     .book-cover { width: 100%; aspect-ratio: 3 / 4; object-fit: contain; }
     .book-card { display: flex; flex-direction: column; min-width: 0; }
+    .book-card[hidden] { display: none; }
     .book-title { margin-top: 1.25rem; font-size: 1.125rem; line-height: 1.5; font-weight: 600; }
     .book-description { margin-top: .5rem; color: #52606d; font-size: .875rem; line-height: 1.75; }
     .buy-link { align-self: flex-start; margin-top: 1rem; border: 1px solid #7f1d1d; padding: .625rem .875rem; color: #7f1d1d; font-size: .875rem; font-weight: 700; }
@@ -63,8 +64,8 @@
 
       <div class="mt-16">
         <div class="border-b border-[#d9d2c8] pb-5">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#8b765d]">01 / Play together</p>
-          <h3 class="mt-2 text-2xl sm:text-3xl">The Dialogues Series <span class="text-[#69737c]">(Guitar Duos)</span></h3>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#8b765d]">01 / Discover what's new</p>
+          <h3 class="mt-2 text-2xl sm:text-3xl">Latest Publications</h3>
         </div>
 
         <article class="mt-8 grid items-center gap-8 bg-[#eeeae2] p-6 sm:p-10 md:grid-cols-[minmax(0,240px)_1fr] md:gap-12">
@@ -75,44 +76,11 @@
             <p class="serif mt-3 text-lg leading-7">28 Pieces for Two Guitars by Bach, Handel, Purcell &amp; Monteverdi</p>
             <p class="mt-4 max-w-xl text-sm leading-7 text-[#52606d]">Explore the expressive world of Baroque music through arrangements made for two guitarists to enjoy together.</p>
             <div class="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <a href="#" class="inline-flex bg-[#7F1D1D] px-5 py-3 text-sm font-semibold text-white hover:bg-[#5f1616]">Buy on Amazon</a>
+              <button type="button" disabled class="inline-flex cursor-not-allowed border border-[#a99c8f] px-5 py-3 text-sm font-semibold text-[#52606d]">Coming Soon</button>
               <a href="baroque-dialogues.html" class="text-sm font-semibold text-[#7F1D1D] underline underline-offset-4">Bonus Parts, TABs &amp; Audio</a>
             </div>
           </div>
         </article>
-
-        <div class="mt-10 grid grid-cols-2 gap-x-5 gap-y-12 sm:gap-x-8 lg:grid-cols-4">
-          <article class="book-card">
-            <img src="assets/covers/classical-dialogues-i.jpg" alt="Cover of Classical Dialogues I" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
-            <h4 class="book-title serif">Classical Dialogues I</h4>
-            <p class="book-description">A selection of classical music arranged for two guitars, bringing Mozart and Sor to the music stand.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
-          </article>
-          <article class="book-card">
-            <img src="assets/covers/classical-dialogues-ii.jpg" alt="Cover of Classical Dialogues II" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
-            <h4 class="book-title serif">Classical Dialogues II</h4>
-            <p class="book-description">Guitar duets by Carulli for players looking to explore the classical repertoire together.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
-          </article>
-          <article class="book-card">
-            <img src="assets/covers/classical-dialogues-iii.jpg" alt="Cover of Classical Dialogues III" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
-            <h4 class="book-title serif">Classical Dialogues III</h4>
-            <p class="book-description">A collection of guitar duets by Küffner, ready for shared study and performance.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
-          </article>
-          <article class="book-card">
-            <img src="assets/covers/romantic-dialogues.jpg" alt="Cover of Romantic Dialogues" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
-            <h4 class="book-title serif">Romantic Dialogues</h4>
-            <p class="book-description">Romantic-era music by Schumann and Tchaikovsky arranged for two guitars.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
-          </article>
-          <article class="book-card">
-            <img src="assets/covers/folk.jpg" alt="Cover of Folk Dialogues" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
-            <h4 class="book-title serif">Folk Dialogues</h4>
-            <p class="book-description">Folk songs and traditional tunes arranged to be shared by two guitarists.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
-          </article>
-        </div>
       </div>
 
       <div class="mt-20">
@@ -145,57 +113,96 @@
             <p class="book-description">A collection of popular melodies for guitarists to enjoy while building sight-reading skills.</p>
             <a class="buy-link" href="https://www.amazon.com/dp/B0BZF8V5RR" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
           </article>
+        </div>
+      </div>
+
+      <div class="mt-20">
+        <div class="border-b border-[#d9d2c8] pb-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#8b765d]">03 / Coming soon</p>
+          <h3 class="mt-2 text-2xl sm:text-3xl">In the Pipeline</h3>
+        </div>
+        <div class="mt-8 grid grid-cols-2 gap-x-5 gap-y-12 sm:gap-x-8 lg:grid-cols-4">
           <article class="book-card">
-            <img src="assets/covers/estonian-folk-tunes-for-guitar.jpg" alt="Cover of Estonian Folk Tunes for Guitar" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
-            <h4 class="book-title serif">Estonian Folk Tunes for Guitar</h4>
-            <p class="book-description">Discover a selection of Estonian folk melodies arranged for guitar.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
+            <img src="assets/covers/classical-dialogues-i.jpg" alt="Cover of Classical Dialogues I" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
+            <h4 class="book-title serif">Classical Dialogues I</h4>
+            <p class="book-description">A selection of classical music arranged for two guitars, bringing Mozart and Sor to the music stand.</p>
+            <button type="button" disabled class="mt-4 self-start cursor-not-allowed border border-[#a99c8f] px-3.5 py-2.5 text-sm font-semibold text-[#52606d]">Coming Soon</button>
+          </article>
+          <article class="book-card">
+            <img src="assets/covers/classical-dialogues-ii.jpg" alt="Cover of Classical Dialogues II" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
+            <h4 class="book-title serif">Classical Dialogues II</h4>
+            <p class="book-description">Guitar duets by Carulli for players looking to explore the classical repertoire together.</p>
+            <button type="button" disabled class="mt-4 self-start cursor-not-allowed border border-[#a99c8f] px-3.5 py-2.5 text-sm font-semibold text-[#52606d]">Coming Soon</button>
+          </article>
+          <article class="book-card" hidden>
+            <img src="assets/covers/classical-dialogues-iii.jpg" alt="Cover of Classical Dialogues III" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
+            <h4 class="book-title serif">Classical Dialogues III</h4>
+            <p class="book-description">A collection of guitar duets by Küffner, ready for shared study and performance.</p>
+            <button type="button" disabled class="mt-4 self-start cursor-not-allowed border border-[#a99c8f] px-3.5 py-2.5 text-sm font-semibold text-[#52606d]">Coming Soon</button>
+          </article>
+          <article class="book-card">
+            <img src="assets/covers/romantic-dialogues.jpg" alt="Cover of Romantic Dialogues" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
+            <h4 class="book-title serif">Romantic Dialogues</h4>
+            <p class="book-description">Romantic-era music by Schumann and Tchaikovsky arranged for two guitars.</p>
+            <button type="button" disabled class="mt-4 self-start cursor-not-allowed border border-[#a99c8f] px-3.5 py-2.5 text-sm font-semibold text-[#52606d]">Coming Soon</button>
+          </article>
+          <article class="book-card">
+            <img src="assets/covers/folk.jpg" alt="Cover of Folk Dialogues" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
+            <h4 class="book-title serif">Folk Dialogues</h4>
+            <p class="book-description">Folk songs and traditional tunes arranged to be shared by two guitarists.</p>
+            <button type="button" disabled class="mt-4 self-start cursor-not-allowed border border-[#a99c8f] px-3.5 py-2.5 text-sm font-semibold text-[#52606d]">Coming Soon</button>
           </article>
         </div>
       </div>
 
       <div class="mt-20">
         <div class="border-b border-[#d9d2c8] pb-5">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#8b765d]">03 / Learn &amp; grow</p>
-          <h3 class="mt-2 text-2xl sm:text-3xl">Methods &amp; Courses</h3>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#8b765d]">04 / From the archive</p>
+          <h3 class="mt-2 text-2xl sm:text-3xl">Archive: Out-of-Print & Earlier Estonian Editions</h3>
         </div>
         <div class="mt-8 grid grid-cols-2 gap-x-5 gap-y-12 sm:gap-x-8 lg:grid-cols-4">
+          <article class="book-card">
+            <img src="assets/covers/estonian-folk-tunes-for-guitar.jpg" alt="Cover of Estonian Folk Tunes for Guitar" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
+            <h4 class="book-title serif">Estonian Folk Tunes for Guitar</h4>
+            <p class="book-description">Discover a selection of Estonian folk melodies arranged for guitar.</p>
+            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Inquiry by e-mail</span>
+          </article>
           <article class="book-card">
             <img src="assets/covers/guitar-method-for-the-young-2025.jpg" alt="Cover of Guitar Method for the Young" width="800" height="573" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">Guitar Method for the Young</h4>
             <p class="book-description">A guitar method for young learners, created to support their first steps with the instrument.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
+            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Inquiry by e-mail</span>
           </article>
           <article class="book-card">
             <img src="assets/covers/guitar-school-eng.jpg" alt="Cover of Guitar School, English edition" width="381" height="535" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">Guitar School <span class="text-[#69737c]">(English)</span></h4>
             <p class="book-description">An English-language guide to practical guitar playing for learners and teachers.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
+            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Out of Print</span>
           </article>
           <article class="book-card">
             <img src="assets/covers/guitar-school-est-2008.jpg" alt="Cover of Guitar School, Estonian edition" width="355" height="496" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">Guitar School <span class="text-[#69737c]">(Estonian)</span></h4>
             <p class="book-description">The Estonian edition of Guitar School, a guide to the world of practical guitar playing.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
+            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Out of Print</span>
           </article>
           <article class="book-card">
             <img src="assets/covers/fast-track-guitar-course-dvd.jpg" alt="Cover of Fast-Track Guitar Course with DVD" width="676" height="619" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">Fast-Track Guitar Course <span class="text-[#69737c]">(DVD)</span></h4>
             <p class="book-description">An Estonian-language guitar course with a DVD companion for guided learning.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
+            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Out of Print</span>
           </article>
           <article class="book-card">
             <img src="assets/covers/guitar-tuning-and-maintenance-est.jpg" alt="Cover of Guitar Tuning and Maintenance, Estonian edition" width="500" height="709" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">Guitar Tuning and Maintenance <span class="text-[#69737c]">(Estonian)</span></h4>
             <p class="book-description">An Estonian-language guide to tuning and caring for your guitar.</p>
-            <a class="buy-link" href="#">Buy on Amazon</a>
+            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Out of Print</span>
           </article>
         </div>
       </div>
 
       <div id="audio" class="mt-20 scroll-mt-6">
         <div class="border-b border-[#d9d2c8] pb-5">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#8b765d]">04 / Listen</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-[#8b765d]">05 / Listen</p>
           <h3 class="mt-2 text-2xl sm:text-3xl">Audio Publications</h3>
           <p class="mt-3 text-sm leading-7 text-[#52606d]">Explore our recordings on Spotify.</p>
         </div>
@@ -257,7 +264,7 @@
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-6 py-10 sm:flex-row lg:px-10">
       <div><p class="serif text-lg font-semibold">Kitarrikool Publishing</p><p class="mt-2 text-sm text-[#69737c]">© Kitarrikool Publishing (Est. 2007)</p></div>
       <div class="text-sm leading-7 text-[#52606d] sm:text-right">
-        <p>Contact: <a class="underline underline-offset-4 hover:text-[#7F1D1D]" href="mailto:kristo@kitarrikool.ee">kristo@kitarrikool.ee</a> <span class="text-xs">(placeholder)</span></p>
+        <p>Contact: <a class="underline underline-offset-4 hover:text-[#7F1D1D]" href="mailto:kristo@kitarrikool.ee">kristo@kitarrikool.ee</a></p>
         <!-- Replace the placeholder links with the publisher's channel URLs. -->
         <p><a class="underline underline-offset-4 hover:text-[#7F1D1D]" href="#">YouTube</a><span class="mx-3" aria-hidden="true">·</span><a class="underline underline-offset-4 hover:text-[#7F1D1D]" href="#">Spotify</a></p>
       </div>
