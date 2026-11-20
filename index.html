@@ -19,6 +19,12 @@
     .book-description { margin-top: .5rem; color: #52606d; font-size: .875rem; line-height: 1.75; }
     .buy-link { align-self: flex-start; margin-top: 1rem; border: 1px solid #7f1d1d; padding: .625rem .875rem; color: #7f1d1d; font-size: .875rem; font-weight: 700; }
     .buy-link:hover { background: #7f1d1d; color: white; }
+    .book-actions { display: flex; align-items: center; gap: .75rem; margin-top: 1rem; }
+    .book-actions .buy-link { margin-top: 0; }
+    .video-link { display: inline-flex; color: #7f1d1d; }
+    .video-link:hover { color: #5f1616; }
+    .audio-link { display: inline-flex; color: #7f1d1d; }
+    .audio-link:hover { color: #5f1616; }
     :focus-visible { outline: 2px solid #7f1d1d; outline-offset: 4px; }
   </style>
   <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon.png">
@@ -107,7 +113,15 @@
             <img src="assets/covers/40-popular-melodies-for-guitar.jpg" alt="Cover of 40 Popular Melodies for Guitar" width="800" height="1131" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">40 Popular Melodies for Guitar</h4>
             <p class="book-description">A collection of popular melodies for guitarists to enjoy while building sight-reading skills.</p>
-            <a class="buy-link" href="https://www.amazon.com/dp/B0BZF8V5RR" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+            <div class="book-actions">
+              <a class="buy-link" href="https://www.amazon.com/dp/B0BZF8V5RR" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+              <a class="video-link" href="https://youtube.com/playlist?list=PLGJ9PzrjNC89g1_X1SZtFrElc_TPI794v&amp;si=x2DFjHaYOjW9rhrn" target="_blank" rel="noopener noreferrer" aria-label="Watch 40 Popular Melodies for Guitar videos on YouTube">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="6" width="13" height="12" rx="2"></rect>
+                  <path d="m16 10 5-3v10l-5-3"></path>
+                </svg>
+              </a>
+            </div>
           </article>
         </div>
       </div>
@@ -161,13 +175,30 @@
             <img src="assets/covers/estonian-folk-tunes-for-guitar.jpg" alt="Cover of Estonian Folk Tunes for Guitar" width="800" height="1035" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">Estonian Folk Tunes for Guitar</h4>
             <p class="book-description">Discover a selection of Estonian folk melodies arranged for guitar.</p>
-            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Inquiry by e-mail</span>
+            <div class="book-actions">
+              <span class="text-sm font-semibold text-[#69737c]">Inquiry by e-mail</span>
+              <a class="audio-link" href="https://open.spotify.com/album/3gypKYALb8dsyuLDcooUTk?si=c5760aa16f4947a6" target="_blank" rel="noopener noreferrer" aria-label="Listen to Estonian Folk Tunes for Guitar on Spotify">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 10v4h3l5 4V6l-5 4H4z"></path>
+                  <path d="M16 9a5 5 0 0 1 0 6"></path>
+                  <path d="M18.5 6.5a9 9 0 0 1 0 11"></path>
+                </svg>
+              </a>
+            </div>
           </article>
           <article class="book-card">
             <img src="assets/covers/guitar-method-for-the-young-2025.jpg" alt="Cover of Guitar Method for the Young" width="800" height="573" loading="lazy" class="book-cover bg-[#eeeae2]">
             <h4 class="book-title serif">Guitar Method for the Young</h4>
             <p class="book-description">A guitar method for young learners, created to support their first steps with the instrument.</p>
-            <span class="mt-4 self-start text-sm font-semibold text-[#69737c]">Inquiry by e-mail</span>
+            <div class="book-actions">
+              <span class="text-sm font-semibold text-[#69737c]">Inquiry by e-mail</span>
+              <a class="video-link" href="https://youtube.com/playlist?list=PLGJ9PzrjNC89lIKWYRa6svM-9oVD_Ruw_&amp;si=ovu51V-zF6p-Nw7F" target="_blank" rel="noopener noreferrer" aria-label="Watch Guitar Method for the Young videos on YouTube">
+                <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="6" width="13" height="12" rx="2"></rect>
+                  <path d="m16 10 5-3v10l-5-3"></path>
+                </svg>
+              </a>
+            </div>
           </article>
           <article class="book-card">
             <img src="assets/covers/guitar-school-eng.jpg" alt="Cover of Guitar School, English edition" width="381" height="535" loading="lazy" class="book-cover bg-[#eeeae2]">
